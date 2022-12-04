@@ -1,0 +1,50 @@
+.movie-card {
+    width: 30%;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+    
+    display: flex;                      /* essa coluna de css serve para alinhar corretamente os itens lado a lado, o space-between   */
+    flex-direction: column;             /* é extremamente necessário para esse alinhamento, comente a linha para ver a funcionalidade */
+    justify-content: space-between;
+    
+    background: #111;
+    color: #fff;
+}
+
+.movie-card img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.movie-card h2 {
+    margin-bottom: 1rem;
+    
+}
+
+.movie-card p {
+    margin-bottom: 1rem;
+}
+
+.movie-card svg {               /* relacionado ao ícone de estrela */
+    color: #f7d354;
+}
+
+.movie-card a {
+    /* cores */
+    background: #f7d354;
+    color: #000;
+
+    /* tamanho/formato */
+    border: 2px solid #f7d354;
+    border-radius: 4px;
+    padding: 1rem .5rem;
+
+    /* posicionamentos */
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+
+    /* 
+        perceba que voce não precisa declarar nenhum hover e nenhum transition pois o 'a' declarado globalmente no global.css do App já está sendo renderizado, então os componentes filhos acabam herdando o css global. 
+    */
+}
